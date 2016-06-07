@@ -5,6 +5,8 @@ flag=1
 else
 flag=0
 fi
+echo "Installing Default jdk"
+sudo apt-get -y install default-jdk
 echo "Installing OpenCV 2.4.13 on Worker node"
 echo "Assuming running from within build folder on shared storage"
 echo "Removing any pre-installed ffmpeg and x264"
@@ -29,7 +31,7 @@ sudo make install
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 echo "OpenCV 2.4.13 ready to be used but test it anyway"
-echo " WIll this open the python terminal ?"
-python
-import cv2
-cv2.__version__
+echo "To test open the python terminal"
+echo "python"
+echo "import cv2"
+echo "cv2.__version__"
