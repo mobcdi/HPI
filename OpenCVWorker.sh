@@ -10,6 +10,9 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 echo "Installing Default jdk"
 sudo apt-get -y install default-jdk
+echo "Installing pip for python"
+sudo apt-get -y python-pip
+# if you need to install python modules via pip use sudo pip install [packagename]
 echo "Installing OpenCV 2.4.13 on Worker node"
 echo "Assuming running from within build folder on shared storage"
 echo "Removing any pre-installed ffmpeg and x264"
