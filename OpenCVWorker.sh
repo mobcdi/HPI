@@ -6,7 +6,7 @@ else
 flag=0
 fi
 echo "Installing OpenCV 2.4.13 on Worker node"
-echo "Assuming running from within build folder on shared storage
+echo "Assuming running from within build folder on shared storage"
 echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get -y remove ffmpeg x264 libx264-dev
 echo "Installing unzip"
