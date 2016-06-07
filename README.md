@@ -1,8 +1,9 @@
 # HPI
 
 ##What the scripts do
-`opencv2_4_13.sh` is the main file used to download the Opencv2 source code and create the directories, compile the code and then install it
-`OpenCVWorker.sh` is the script that runs on the other workers in the cluster to update the OS, install default jdk, install OpenCV2 and possibly other tasks (maybe pip install)
+`opencv2_4_13.sh` is the main file used to download the Opencv2 source code and create the directories, compile the code and then install opencv on that vm.
+
+`OpenCVWorker.sh` is the script that runs on the other workers in the cluster to update the OS, install default jdk, install OpenCV2 and possibly other tasks (maybe pip install, copy spark worker to directory and connect to master)
 
 **I might create another script to uninstall OpenCV as well**
 
