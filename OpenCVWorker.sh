@@ -5,6 +5,9 @@ flag=1
 else
 flag=0
 fi
+echo "Update the OS first"
+sudo apt-get -y update
+sudo apt-get -y upgrade
 echo "Installing Default jdk"
 sudo apt-get -y install default-jdk
 echo "Installing OpenCV 2.4.13 on Worker node"
@@ -35,3 +38,4 @@ echo "To test open the python terminal"
 echo "python"
 echo "import cv2"
 echo "cv2.__version__"
+echo "Should I also copy over the Spart Worker?"
