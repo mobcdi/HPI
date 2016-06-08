@@ -47,6 +47,8 @@ echo "Installing Scipy Stack"
 sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 echo "Installing pip for python"
 sudo apt-get -y python-pip
+echo "Installing scikit-learn"
+sudo pip install -U scikit-learn
 echo "Installing the python modules"
 sudo pip install pytesseract
 echo "Getting OpenCV3 from GitHub"
