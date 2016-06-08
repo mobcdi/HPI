@@ -53,6 +53,10 @@ echo "Installing scikit -image"
 sudo apt-get install python-skimage
 echo "Installing the python modules"
 sudo pip install pytesseract
+echo "Installing Thunder"
+sudo pip install thunder-python
+sudo pip install thunder-regression
+sudo pip install thunder-factorization
 echo "Getting OpenCV3 from GitHub"
 git clone https://github.com/Itseez/opencv.git
 cd opencv
