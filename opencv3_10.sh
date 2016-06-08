@@ -49,6 +49,8 @@ echo "Installing pip for python"
 sudo apt-get -y python-pip
 echo "Installing scikit-learn"
 sudo pip install -U scikit-learn
+echo "Installing scikit -image"
+sudo apt-get install python-skimage
 echo "Installing the python modules"
 sudo pip install pytesseract
 echo "Getting OpenCV3 from GitHub"
