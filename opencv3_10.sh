@@ -44,13 +44,13 @@ sudo apt-get -y install libgtk2.0-dev
 echo "Installing pip for python"
 sudo apt-get -y python-pip
 echo "Installing Scipy Stack"
-sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 echo "Installing pip for python"
 sudo apt-get -y python-pip
 echo "Installing scikit-learn"
-sudo pip install -U scikit-learn
+sudo pip install scikit-learn
 echo "Installing scikit -image"
-sudo apt-get install python-skimage
+sudo apt-get -y install python-skimage
 echo "Installing the python modules"
 sudo pip install pytesseract
 echo "Installing Thunder"
