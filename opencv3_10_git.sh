@@ -41,8 +41,12 @@ sudo apt-get -y install libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopen
 sudo apt-get -y install x264 v4l-utils ffmpeg
 echo "Install GUI module package" 
 sudo apt-get -y install libgtk2.0-dev
+echo "Installing Scipy Stack"
+sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 echo "Installing pip for python"
 sudo apt-get -y python-pip
+echo "Installing the python modules"
+sudo pip install pytesseract
 echo "Getting OpenCV3 from GitHub"
 cd ~
 git clone https://github.com/Itseez/opencv.git
