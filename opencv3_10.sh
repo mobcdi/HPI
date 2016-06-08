@@ -44,14 +44,15 @@ sudo apt-get -y install libgtk2.0-dev
 echo "Installing pip for python"
 sudo apt-get -y python-pip
 echo "Getting OpenCV3 from GitHub"
-cd ~
 git clone https://github.com/Itseez/opencv.git
 cd opencv
 git checkout 3.1.0
-cd ~
+echo "Going up the directory tree to get out of opencv directory"
+cd ..
 git clone https://github.com/Itseez/opencv_contrib.git
 cd opencv_contrib
 git checkout 3.1.0
+cd ..
 cd opencv
 rm -rf build
 mkdir build
