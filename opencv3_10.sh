@@ -17,6 +17,8 @@ sudo apt-get -y remove ffmpeg x264 libx264-dev
 echo "Update the OS first"
 sudo apt-get -y update
 sudo apt-get -y upgrade
+echo "Upgrade pip installer as its needed for thunder-python later"
+sudo pip install -U pip
 echo "Installing Default jdk"
 sudo apt-get -y install default-jdk
 echo "Installing Tesseract for text recognition as it needs to be installed before OpenCV"
@@ -54,9 +56,9 @@ sudo apt-get -y install python-matplotlib
 echo "Installing the python modules"
 sudo pip install pytesseract
 echo "Installing Thunder"
-sudo pip install thunder-python
-sudo pip install thunder-regression
-sudo pip install thunder-factorization
+sudo -H pip install thunder-python
+sudo -H pip install thunder-regression
+sudo -H pip install thunder-factorization
 echo "Getting OpenCV3 from GitHub"
 git clone https://github.com/Itseez/opencv.git
 cd opencv
