@@ -17,8 +17,6 @@ sudo apt-get -y remove ffmpeg x264 libx264-dev
 echo "Update the OS first"
 sudo apt-get -y update
 sudo apt-get -y upgrade
-echo "Upgrade pip installer as its needed for thunder-python later"
-sudo pip install -U pip
 echo "Installing Default jdk"
 sudo apt-get -y install default-jdk
 echo "Installing Tesseract for text recognition as it needs to be installed before OpenCV"
@@ -45,8 +43,12 @@ echo "Install GUI module package"
 sudo apt-get -y install libgtk2.0-dev
 echo "Installing Scipy Stack"
 sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+echo "Installing Scimage for easier visualisation of HoG"
+sudo apt-get -y install python-skimage
 echo "Installing pip for python"
 sudo apt-get -y python-pip
+echo "Upgrade pip installer as its needed for thunder-python later"
+sudo pip install -U pip
 echo "Installing scikit-learn"
 sudo pip install scikit-learn
 echo "Installing scikit -image"
