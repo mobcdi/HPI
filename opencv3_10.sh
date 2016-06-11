@@ -43,16 +43,14 @@ echo "Install GUI module package"
 sudo apt-get -y install libgtk2.0-dev
 echo "Installing Scipy Stack"
 sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-echo "Installing Scimage for easier visualisation of HoG"
-sudo apt-get -y install python-skimage
 echo "Installing pip for python"
 sudo apt-get -y python-pip
 echo "Upgrade pip installer as its needed for thunder-python later"
 sudo pip install -U pip
 echo "Installing scikit-learn"
 sudo pip install scikit-learn
-echo "Installing scikit -image"
-sudo apt-get -y install python-skimage
+echo "Installing Scimage for easier visualisation of HoG and access to other detectors and tools (apt-get version outdated)"
+sudo pip install scikit-image
 echo "Installing Matplotlib"
 sudo apt-get -y install python-matplotlib
 echo "Installing the python modules"
