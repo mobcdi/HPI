@@ -45,10 +45,12 @@ echo "Installing Scipy Stack"
 sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 echo "Installing pip for python"
 sudo apt-get -y python-pip
-echo "Upgrade pip installer as its needed for thunder-python later"
+echo "Upgrade pip installer as its needed for thunder-python later and Scikit-image"
 sudo pip install -U pip
 echo "Installing scikit-learn"
 sudo pip install scikit-learn
+echo "Installing Cython as its needed for scikit-image"
+sudo pip install Cython
 echo "Installing Scimage for easier visualisation of HoG and access to other detectors and tools (apt-get version outdated)"
 sudo pip install scikit-image
 echo "Installing Matplotlib"
