@@ -50,6 +50,8 @@ sudo pip install -U pip
 echo "Installing scikit-learn"
 sudo pip install scikit-learn
 echo "Installing Cython as its needed for scikit-image"
+echo "Installing MoviePY"
+sudo pip install moviepy
 sudo pip install Cython
 echo "Installing Scimage for easier visualisation of HoG and access to other detectors and tools (apt-get version outdated)"
 sudo pip install scikit-image
