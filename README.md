@@ -5,7 +5,9 @@
 
 `OpenCVWorker.sh` is the script that runs on the other workers in the cluster to update the OS, install default jdk, install OpenCV2 and possibly other tasks (maybe pip install, copy spark worker to directory and connect to master)
 
-**I might create another script to uninstall OpenCV as well**
+`OpenCVGCE.sh` installs OpenCV on GCE instance, from there the instance disk can be cloned to deploy additional machines
+
+
 
 ##Notes to Me:
 - Run the script as sudo
